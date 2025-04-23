@@ -17,7 +17,7 @@ import type {StaffOption} from '@/pages/StaffAdmin/Components/Modals/StaffTreeSe
 import FileSaver from 'file-saver';
 import type {FormInstance} from 'antd/es/form';
 import type {CommonResp} from '@/services/common';
-import {Sync} from '@/pages/StaffAdmin/CustomerTag/service';
+import {Sync} from '@/pages/StaffAdmin/Customer/service';
 import type {CustomerTagGroupItem} from '@/pages/StaffAdmin/CustomerTag/data';
 import {history} from '@@/core/history';
 import {QueryCustomerTagGroups} from '@/services/customer_tag_group';

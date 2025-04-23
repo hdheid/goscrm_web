@@ -169,3 +169,10 @@ export async function UpdateBasicInfoAndRemark(params: UpdateBasicInfoAndRemarkP
   });
 }
 
+// 同步员工信息
+export async function Sync() {
+  return request(`${StaffAdminApiPrefix}/customer/action/sync`, {
+    method: 'POST',
+  });
+}
+
