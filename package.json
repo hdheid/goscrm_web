@@ -77,7 +77,7 @@
     "react": "^16.14.0",
     "react-contenteditable": "^3.3.5",
     "react-dev-inspector": "^1.1.1",
-    "react-dom": "^17.0.0",
+    "react-dom": "^16.14.0",
     "react-helmet-async": "^1.0.4",
     "react-script-tag": "^1.1.2",
     "react-sortablejs": "^6.0.0",
