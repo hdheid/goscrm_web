@@ -290,11 +290,11 @@ const Welcome: React.FC<WelcomeProps> = (props) => {
               <div>
                 <Typography.Paragraph style={{marginBottom: 6}}>
                   <Typography.Text style={{color: '#6b7a88'}}>企业名称：</Typography.Text>
-                  <Typography.Text>成都小橘科技有限公司</Typography.Text>
+                  <Typography.Text>刘小浩科技有限公司</Typography.Text>
                 </Typography.Paragraph>
                 <Typography.Paragraph style={{marginBottom: 0}}>
                   <Typography.Text style={{color: '#6b7a88'}}>员工总数：</Typography.Text>
-                  <Typography.Text>12</Typography.Text>
+                  <Typography.Text>XXX</Typography.Text>
                 </Typography.Paragraph>
               </div>
             </ProCard>
@@ -410,55 +410,7 @@ const Welcome: React.FC<WelcomeProps> = (props) => {
               </div>
             </ProCard>
 
-            <ProCard.Group hidden={!showSidebar} colSpan={'300px'} style={{padding: '0 4px'}} ghost={true}
-                           direction={'column'}>
-              <ProCard title={<h4 style={{fontSize: 15}}>OpenSCRM开源私域流量管理系统</h4>} bordered={true}
-                       bodyStyle={{paddingTop: 10}}>
-                <Row gutter={2}>
-                  <Col span={12}>
-                    <img src={QrcodeImage} width={100} style={{marginBottom: 12}}/>
-                  </Col>
-                  <Col span={12}>
-                    <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
-                      <Paragraph type={'secondary'}>
-                        遇到任何问题，欢迎联系我们
-                      </Paragraph>
-                      <Paragraph type={'secondary'} style={{marginBottom: 0}}>
-                        微信扫码立即进入交流社群
-                      </Paragraph>
-                    </div>
-                  </Col>
-                </Row>
-              </ProCard>
-
-              <ProCard title={'消息存档'} bordered={true} style={{marginTop: 8}} bodyStyle={{paddingTop: 12}}>
-                <Row gutter={2}>
-                  <Col span={12}>
-                    <img width={100} src={ChatImage} onClick={() => {
-                      history.push('/staff-admin/corp-risk-control/chat-session');
-                    }}/>
-                  </Col>
-                  <Col span={12}>
-                    <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'end'}}>
-                      <Paragraph type={'secondary'}>轻松了解员工和客户的沟通过程</Paragraph>
-                      <Button type={'primary'} onClick={() => {
-                        history.push('/staff-admin/corp-risk-control/chat-session');
-                      }}>立即使用</Button>
-                    </div>
-                  </Col>
-                </Row>
-              </ProCard>
-
-              <ProCard title={'入门指引'} bordered={true} style={{marginTop: 8}} bodyStyle={{paddingTop: 10}}>
-                <div className={styles.guideContainer}>
-                  <div className={styles.item}>
-                    文档中心 <Button size={'small'} target={'_blank'} href={'https://github.com/openscrm/api-server/wiki'}
-                                 type={'dashed'}>查看</Button>
-                  </div>
-                </div>
-              </ProCard>
-
-            </ProCard.Group>
+          
           </ProCard.Group>
 
           <ProCard.Group ghost={true} gutter={8} style={{marginTop: 12}}>

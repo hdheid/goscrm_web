@@ -156,13 +156,13 @@ export default [
                     component: './StaffAdmin/DeleteCustomerRecord/index',
                     authority: [BizDeleteCustomer_Full, BizDeleteCustomer_Read],
                   },
-                  {
-                    path: '/staff-admin/corp-risk-control/chat-session',
-                    name: '消息存档',
-                    icon: 'MessageOutlined',
-                    component: './StaffAdmin/ChatSession/index',
-                    authority: [BizMsgArch_Full, BizMsgArch_Read],
-                  },
+                  // {
+                  //   path: '/staff-admin/corp-risk-control/chat-session',
+                  //   name: '消息存档',
+                  //   icon: 'MessageOutlined',
+                  //   component: './StaffAdmin/ChatSession/index',
+                  //   authority: [BizMsgArch_Full, BizMsgArch_Read],
+                  // },
                 ],
               },
               {
