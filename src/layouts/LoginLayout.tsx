@@ -5,7 +5,7 @@ import type { ConnectProps } from 'umi';
 import { connect, Link } from 'umi';
 import React from 'react';
 import type { ConnectState } from '@/models/connect';
-import logo from '../assets/logo_black.svg';
+import logo from '../assets/哆啦A梦.jpg';
 import styles from './LoginLayout.less';
 
 export type UserLayoutProps = {
