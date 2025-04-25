@@ -79,7 +79,7 @@ const QrcodeLogin: React.FC = () => {
         >
           企业微信扫码登录
         </Title>
-        <Paragraph className={styles.desc}>安全，强大，易开发的开源企业微信SCRM</Paragraph>
+        <Paragraph className={styles.desc}></Paragraph>
       </div>
       {code !== CodeOK && alertMessage && (
         <Alert

@@ -13,7 +13,7 @@ import Authorized from '@/utils/Authorized';
 import type {ConnectState} from '@/models/connect';
 import {getMatchMenu} from '@umijs/route-utils';
 import logo from '../assets/logo.svg';
-import headerLogo from '../assets/logo_white.svg';
+import headerLogo from '../assets/哆啦A梦.jpg';
 import type {HeaderViewProps} from '@ant-design/pro-layout/lib/Header';
 import RightContent from '@/components/GlobalHeader/RightContent';
 import Icon, {createFromIconfontCN} from '@ant-design/icons';
@@ -146,7 +146,11 @@ const BasicLayout: React.FC<BasicLayoutProps> = (props) => {
       headerTitleRender={() => {
         return (
           <a onClick={() => history.push('/')}>
-            <img src={headerLogo} height={32} alt={'OpenSCRM'} />
+            <img src={headerLogo} style={{
+              marginRight:'5px',
+
+            }} alt=""/>  <div style={{  color: 'white',
+            fontSize: '15px'}}>  SCRM</div>
           </a>
         );
       }}

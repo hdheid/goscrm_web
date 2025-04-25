@@ -35,7 +35,7 @@ const GlobalHeaderRight: React.SFC<GlobalHeaderRightProps> = (props) => {
             color: 'inherit',
           }}
           target="_blank"
-          href="https://www.openscrm.cn"
+
           className={styles.action}
         >
           <QuestionCircleOutlined />
