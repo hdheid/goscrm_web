@@ -99,7 +99,7 @@ const Events: React.FC<EventsProps> = (props) => {
                   return <div className={styles.eventItem}>
                     <div className={styles.timeHeader}>
                       <TagsFilled />
-                      <span>{moment(item?.created_at).format('h:mm')}</span>
+                      <span>{moment(item?.created_at).format('HH:mm')}</span>
                     </div>
                     <div className={styles.infoBottom}>
                       <div className={styles.infoBox}>
