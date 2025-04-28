@@ -7,7 +7,7 @@ import type {
 } from '@/pages/StaffAdmin/CustomerWelcomeMsg/data';
 
 export async function Query(params?: QueryCustomerWelcomeMsgParam) {
-  return request(`${StaffAdminApiPrefix}/customer/welcome-msgs`, {
+  return request(`${StaffAdminApiPrefix}/customer/welcome-msg`, {
     params: {
       ...params,
     },

@@ -290,11 +290,11 @@ const Welcome: React.FC<WelcomeProps> = (props) => {
               <div>
                 <Typography.Paragraph style={{marginBottom: 6}}>
                   <Typography.Text style={{color: '#6b7a88'}}>企业名称：</Typography.Text>
-                  <Typography.Text>刘小浩科技有限公司</Typography.Text>
+                  <Typography.Text>{summary?.corp_name || '刘浩科技有限公司'}</Typography.Text>
                 </Typography.Paragraph>
                 <Typography.Paragraph style={{marginBottom: 0}}>
                   <Typography.Text style={{color: '#6b7a88'}}>员工总数：</Typography.Text>
-                  <Typography.Text>XXX</Typography.Text>
+                  <Typography.Text>{summary?.total_staffs_num || '-'}</Typography.Text>
                 </Typography.Paragraph>
               </div>
             </ProCard>
@@ -441,7 +441,7 @@ const Welcome: React.FC<WelcomeProps> = (props) => {
                   </div>
                 </a>
 
-                <a className={styles.item} onClick={() => {
+                {/* <a className={styles.item} onClick={() => {
                   history.push('/staff-admin/corp-risk-control/chat-session')
                 }}>
                   <div className={styles.icon}>
@@ -451,7 +451,7 @@ const Welcome: React.FC<WelcomeProps> = (props) => {
                     <p className={styles.title}>消息存档</p>
                     <p className={styles.desc}>轻松了解员工和客户的沟通过程</p>
                   </div>
-                </a>
+                </a> */}
 
                 <a className={styles.item} onClick={() => {
                   history.push('/staff-admin/customer-management/customer-tag')
