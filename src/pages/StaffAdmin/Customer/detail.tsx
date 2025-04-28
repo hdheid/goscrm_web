@@ -259,6 +259,10 @@ const CustomerDetail: React.FC = () => {
   }
 
   const updateBasicInfoAndRemark = (basicInfoParams: any) => {
+    // 确保age字段为number类型
+    if (basicInfoParams.age !== undefined && basicInfoParams.age !== null) {
+      basicInfoParams.age = Number(basicInfoParams.age);
+    }
     UpdateBasicInfoAndRemark({
       ext_staff_id: currentStaff,
       ext_customer_id: extCustomerID,
