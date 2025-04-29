@@ -14,7 +14,7 @@ import {QueryStaffsList} from './service';
 import {ProTableRequestAdapter} from '@/utils/utils';
 import DepartmentTree from './components/DepartmentTree';
 import {history} from 'umi'
-import {Tooltip} from 'antd';
+// import {Tooltip} from 'antd';
 
 const StaffList: React.FC = () => {
   const [syncLoading, setSyncLoading] = useState<boolean>(false);
@@ -93,7 +93,7 @@ const StaffList: React.FC = () => {
       render: (text, dom) => {
         return (
           <Space>
-            {
+            {/* {
               dom.enable_msg_arch === 2 ? <Tooltip placement="topLeft" title="该员工暂未开启消息存档">
                   <Button type={'link'} disabled={true}>聊天记录</Button>
                 </Tooltip>
@@ -101,7 +101,7 @@ const StaffList: React.FC = () => {
                 <Button type={'link'}
                         onClick={() => history.push(`/staff-admin/corp-risk-control/chat-session?staff=${dom.ext_staff_id}`)}
                 >聊天记录</Button>
-            }
+            } */}
             <Button type={'link'}
                     onClick={() => history.push(`/staff-admin/company-management/role?ext_staff_id=${dom.ext_staff_id}`)}>管理权限</Button>
           </Space>
